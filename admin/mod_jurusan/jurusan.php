@@ -11,7 +11,7 @@
             <div class="modal-content">
                 <form id="form-tambah">
                     <div class="modal-header">
-                        <h5 class="modal-title">Tambah Data jurusan</h5>
+                        <h5 class="modal-title">Tambah Data Tingkatan</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -46,7 +46,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h4>Data jurusan</h4>
+                <h4>Data Tingkatan</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -56,8 +56,8 @@
                                 <th class="text-center">
                                     #
                                 </th>
-                                <th>Kode jurusan</th>
-                                <th>Nama jurusan</th>
+                                <th>Kode Tingkatan</th>
+                                <th>Nama Tingkatan</th>
                                 <th>Kuota</th>
                                 <th>status</th>
                                 <th>Action</th>
