@@ -25,7 +25,8 @@ $siswa = fetch($koneksi, 'daftar', ['id_daftar' => $id ]);
                 <span aria-hidden="true">&times;</span>
                 <span class="sr-only">Close</span>
             </button>
-            Silahkan lengkapi data diri anda klik tombol ini untuk isi formulir <a class="btn btn-success" href="?pg=formulir" role="button">Isi Formulir</a>
+            Silahkan lengkapi data diri anda dan melakukan pembayaran formulir <a class="btn btn-success" href="?pg=formulir" role="button">Isi Formulir</a>
+             <a class="btn btn-success" href="?pg=bayar" role="button">Pembayaran</a>
         </div>
         <?php
     }

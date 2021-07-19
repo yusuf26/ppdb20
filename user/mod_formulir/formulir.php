@@ -7,9 +7,16 @@
         <div class="card author-box card-primary">
             <div class="card-header">
                 <h4>Data Pendaftar</h4>
-                <div class="card-header-action">
-                    <a target="_blank" href="mod_formulir/print_daftar.php?id=<?= enkripsi($siswa['id_daftar']) ?>" type="button" class="btn btn-warning animated infinite pulse delay-2s"><i class="fas fa-print    "></i> Cetak Formulir</a>
-                </div>
+                <?php 
+                if($siswa['status'] == 1){
+                    ?>
+                    <div class="card-header-action">
+                        <a target="_blank" href="mod_formulir/print_daftar.php?id=<?= enkripsi($siswa['id_daftar']) ?>" type="button" class="btn btn-warning animated infinite pulse delay-2s"><i class="fas fa-print    "></i> Cetak Formulir</a>
+                    </div>
+                    <?php
+                }
+                 ?>
+                
             </div>
             <?php $img = '<img alt="image" src="mod_formulir/images_siswa/'.$siswa['file_foto'].'" class="rounded-circle author-box-picture">'; ?>
             <div class="card-body">
