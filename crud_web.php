@@ -64,7 +64,7 @@ if ($pg == 'login') {
 
     $username = mysqli_escape_string($koneksi, $_POST['username']);
     $password = mysqli_escape_string($koneksi, $_POST['password']);
-    $siswaQ = mysqli_query($koneksi, "SELECT * FROM daftar WHERE username='$username'");
+    $siswaQ = mysqli_query($koneksi, "SELECT * FROM daftar WHERE no_daftar='$username'");
     if ($username <> "" and $password <> "") {
         if (mysqli_num_rows($siswaQ) == 0) {
             $data = [
