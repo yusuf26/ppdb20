@@ -24,33 +24,33 @@ if(!empty($kuis)){
                         <div class="col-sm-12 col-md-6">
                             <select class="form-control" name="kuis_1" <?= $disabled;?>>
                             	<option value="">.. Pilih Jawaban ..</option>
-                            	<option value="Sudah" <?= ($kuis['kuis_1'] ==  'Sudah') ? ' selected="selected"' : '';?> >Sudah</option>
-                            	<option value="Belum" <?= ($kuis['kuis_1'] ==  'Belum') ? ' selected="selected"' : '';?> >Belum</option>
+                            	<option value="Sudah" <?= (isset($kuis) && $kuis['kuis_1'] ==  'Sudah') ? ' selected="selected"' : '';?> >Sudah</option>
+                            	<option value="Belum" <?= (isset($kuis) && $kuis['kuis_1'] ==  'Belum') ? ' selected="selected"' : '';?> >Belum</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group row mb-2">
                         <label class="col-form-label text-md-left col-12 col-md-3">2. Apakah <?= $siswa['nama'];?> hafal nama-nama warna pelangi ?</label>
                         <div class="col-sm-12 col-md-6">
-                            <textarea class="form-control" rows="3" name="kuis_2" <?= $disabled;?>><?= $kuis['kuis_2'];?></textarea>
+                            <textarea class="form-control" rows="3" name="kuis_2" <?= $disabled;?>> <?= (isset($kuis)) ? $kuis['kuis_2'] : '';?></textarea>
                         </div>
                     </div>
                     <div class="form-group row mb-2">
                         <label class="col-form-label text-md-left col-12 col-md-3">3. Apakah <?= $siswa['nama'];?> hafal nama ayah dan bunda ?</label>
                         <div class="col-sm-12 col-md-6">
-                            <textarea class="form-control" rows="3" name="kuis_3" <?= $disabled;?>><?= $kuis['kuis_3'];?></textarea>
+                            <textarea class="form-control" rows="3" name="kuis_3" <?= $disabled;?>><?= (isset($kuis)) ? $kuis['kuis_3'] : '';?></textarea>
                         </div>
                     </div>
                     <div class="form-group row mb-2">
                         <label class="col-form-label text-md-left col-12 col-md-3">4. Apakah <?= $siswa['nama'];?> hafal syahadat ?</label>
                         <div class="col-sm-12 col-md-6">
-                            <textarea class="form-control" rows="3" name="kuis_4" <?= $disabled;?>><?= $kuis['kuis_4'];?></textarea>
+                            <textarea class="form-control" rows="3" name="kuis_4" <?= $disabled;?>><?= (isset($kuis)) ? $kuis['kuis_4'] : '';?></textarea>
                         </div>
                     </div>
                     <div class="form-group row mb-2">
                         <label class="col-form-label text-md-left col-12 col-md-3">5. Apakah <?= $siswa['nama'];?> hafal no HP ayah bunda ?</label>
                         <div class="col-sm-12 col-md-6">
-                            <textarea class="form-control" rows="3" name="kuis_5" <?= $disabled;?>><?= $kuis['kuis_5'];?></textarea>
+                            <textarea class="form-control" rows="3" name="kuis_5" <?= $disabled;?>><?= (isset($kuis)) ? $kuis['kuis_5'] : '';?></textarea>
                         </div>
                     </div>
                     <?php

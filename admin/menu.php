@@ -25,6 +25,9 @@
     <?php if ($user['level'] == 'admin' || $user['level'] == 'bendahara') { ?>
     <li><a class="nav-link" href="?pg=bayar"><i class="fas fa-money-bill    "></i> <span>Pembayaran</span></a></li>
     <?php } ?>
+    <?php if ($user['level'] !== 'bendahara') { ?>
+    <li><a class="nav-link" href="?pg=kuisioner"><i class="fas fa-th-list    "></i> <span>Kuisioner</span></a></li>
+    <?php } ?>
     <?php if ($user['level'] == 'admin') { ?>
         <li class="dropdown ">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-globe"></i> <span>Web</span></a>

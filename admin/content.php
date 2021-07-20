@@ -44,4 +44,7 @@ if ($pg == '') {
 } elseif ($pg == 'syarat') {
     cek_login_admin();
     include "mod_web/syarat.php";
+}elseif ($pg == 'kuisioner') {
+    cek_login_admin();
+    include "mod_kuisioner/kuisioner.php";
 }
