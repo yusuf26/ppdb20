@@ -58,7 +58,7 @@
                                     <td><?= $user['nama'] ?></td>
                                     <td><?= date('d F Y',strtotime($daftar['tgl_bayar']));?></td>
 							        <td><?= number_format($daftar['jumlah'],0,',','.') ;?></td>
-							        <td><a href="<?= '../user/mod_formulir/dukumen-pembayaran/'.$daftar['bukti'];?>" target="_blink" class="btn btn-md btn-primary" title=""><i class="fa fa-file"></i></a></td>
+							        <td><a href="<?= '../user/mod_bayar/'.$daftar['bukti'];?>" target="_blink" class="btn btn-md btn-primary" title=""><i class="fa fa-file"></i></a></td>
                                     <td>
                                         <?php if ($daftar['verifikasi'] == 1) { ?>
                                             <span class="badge badge-success">diterima</span>

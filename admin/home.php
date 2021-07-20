@@ -140,7 +140,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Jurusan</th>
+                            <th>Tingkatan</th>
                             <th>Peminat</th>
                             <th>Sisa Kuota</th>
                         </tr>

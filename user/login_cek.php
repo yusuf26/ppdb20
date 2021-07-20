@@ -10,7 +10,7 @@ require("../config/functions.crud.php");
 
 $username = mysqli_real_escape_string($koneksi, $_POST['username']);
 $password = mysqli_real_escape_string($koneksi, $_POST['password']);
-$query = mysqli_query($koneksi, "select * from user where username='$username' and status='1'");
+$query = mysqli_query($koneksi, "select * from user where username='$username'");
 $ceklogin = mysqli_num_rows($query);
 $user = mysqli_fetch_array($query);
 if ($ceklogin == 1) {
