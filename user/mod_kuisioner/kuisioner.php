@@ -32,13 +32,21 @@ if(!empty($kuis)){
                     <div class="form-group row mb-2">
                         <label class="col-form-label text-md-left col-12 col-md-3">2. Apakah <?= $siswa['nama'];?> hafal nama-nama warna pelangi ?</label>
                         <div class="col-sm-12 col-md-6">
-                            <textarea class="form-control" rows="3" name="kuis_2" <?= $disabled;?>> <?= (isset($kuis)) ? $kuis['kuis_2'] : '';?></textarea>
+                            <select class="form-control" name="kuis_2" <?= $disabled;?>>
+                                <option value="">.. Pilih Jawaban ..</option>
+                                <option value="Sudah" <?= (isset($kuis) && $kuis['kuis_1'] ==  'Sudah') ? ' selected="selected"' : '';?> >Sudah</option>
+                                <option value="Belum" <?= (isset($kuis) && $kuis['kuis_1'] ==  'Belum') ? ' selected="selected"' : '';?> >Belum</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group row mb-2">
                         <label class="col-form-label text-md-left col-12 col-md-3">3. Apakah <?= $siswa['nama'];?> hafal nama ayah dan bunda ?</label>
                         <div class="col-sm-12 col-md-6">
-                            <textarea class="form-control" rows="3" name="kuis_3" <?= $disabled;?>><?= (isset($kuis)) ? $kuis['kuis_3'] : '';?></textarea>
+                            <select class="form-control" name="kuis_3" <?= $disabled;?>>
+                                <option value="">.. Pilih Jawaban ..</option>
+                                <option value="Sudah" <?= (isset($kuis) && $kuis['kuis_1'] ==  'Sudah') ? ' selected="selected"' : '';?> >Sudah</option>
+                                <option value="Belum" <?= (isset($kuis) && $kuis['kuis_1'] ==  'Belum') ? ' selected="selected"' : '';?> >Belum</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group row mb-2">
